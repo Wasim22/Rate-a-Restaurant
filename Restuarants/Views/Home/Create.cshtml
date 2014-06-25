@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Add a New Restuarant to the Listing</h2>
+
+<form method="post" action="/home/create">
+    <input type="text" class="form-control" placeholder="Enter Name of the Restuarant" name="name" /><br /><br />
+    <input type="text" class="form-control" placeholder="What kind of Cuisine is it?" name="cuisine" /><br /><br />
+    <input type="text" class="form-control" placeholder="Image URL" name="img" /><br /><br />
+    <input type="number" class="form-control" placeholder="Rate it (on a scale of 5)" name="rating" /><br /><br />
+    <input type="submit" class="btn-info" value="Add Restuarant" />
+</form>
+

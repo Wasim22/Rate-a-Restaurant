@@ -1,0 +1,16 @@
+﻿@model Restuarants.Models.Restuarant
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update</h2>
+
+<form method="post" action="/home/update">
+    <input type="text" class="form-control" placeholder="Enter Name of the Restuarant" name="name" value="@Model.Name" /><br /><br />
+    <input type="text" class="form-control" placeholder="What kind of Cuisine is it?" name="cuisine" value="@Model.Cuisine" /><br /><br />
+    <input type="text" class="form-control" placeholder="Image URL" name="img" value="@Model.Img" /><br /><br />
+    <input type="number" class="form-control" placeholder="Rate it (on a scale of 5)" name="rating" value="@Model.Rating" /><br /><br />
+    <input type="hidden" class="form-control" name="id" value="@Model.Id" />
+    <input type="submit" class="btn-info" value="Update" />
+</form>
+

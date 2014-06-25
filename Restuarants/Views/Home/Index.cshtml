@@ -1,0 +1,17 @@
+﻿@model List<Restuarants.Models.Restuarant>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<body style="background-color:lemonchiffon">
+<br />
+@foreach (var R in Model)
+{
+    <br /><div style=""><a href="/home/about/@R.Id"><img src="@R.Img" class="img-circle" width="100" height="100" style="margin-right: 30px;" /><span style="font-size:large">@R.Name</span></a><br /></div>
+
+}
+
+<br />
+<br />
+<a href="/home/create"><input type="submit" value="Add a New Restuarant" class="btn-info" /></a>
+</body>
